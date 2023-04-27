@@ -1,0 +1,125 @@
+#header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  .header{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 45%;
+    h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+    .To{
+    color: #FA01FF;
+  }
+    .Learn{
+    color:#944FFF;
+  }
+      a{
+        color: #FFFFFF;
+      }
+}
+
+    .active{
+      color: #FA01FF;
+    }
+    &--btn{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+      .icon{
+        color: #FFFFFF;
+        font-size: 22px;
+      }
+      .sign-up{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #DAD8DE;
+        width: 109px;
+        height: 46px;
+        background: linear-gradient(180deg, #FA01FF 0%, rgba(134, 18, 129, 0.91) 99.22%, #000000 150%);
+        border-radius: 2px;
+        border: none;
+        outline: none;
+      }
+      .sign-in{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #DAD8DE;
+        background: transparent;
+        width: 109px;
+        height: 46px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        &:hover{
+          text-decoration:1px solid red;
+        }
+      }
+
+
+    }
+  }
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1366px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 450px) {
+
+}
+@media (max-width: 414px) {
+
+}
+@media (max-width: 400px) {
+
+}
+@media (max-width: 390px) {
+
+}
+@media (max-width: 375px) {
+
+}
+@media (max-width: 360px) {
+
+}
+@media (max-width: 320px) {
+
+}
