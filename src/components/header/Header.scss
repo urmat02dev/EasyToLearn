@@ -1,21 +1,22 @@
 #header{
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 1;
   .header{
     width: 100%;
-    margin: 20px 0;
+    padding: 12px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     &--title{
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 45%;
-    h1{
+    .h1{
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -23,18 +24,170 @@
     display: flex;
     align-items: center;
     color: #FFFFFF;
+      &:hover {
+        color: #944FFF;
+      }
   }
     .To{
     color: #FA01FF;
+      &:hover {
+        color: #FFFFFF;
+
+      }
   }
     .Learn{
     color:#944FFF;
-  }
-      a{
+      &:hover {
         color: #FFFFFF;
+
+      }
+  }
+      .a{
+        color: #FFFFFF;
+        padding-right: 5px;
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+      .category{
+        cursor: pointer;
+        &--title{
+          margin-left: 10px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .p{
+            color: rgba(255, 255, 255, 0.71);
+
+            &:hover{
+              text-decoration: underline;
+
+            }
+          }
+          .lAngle{
+              margin-left: 5px;
+              margin-top: 1px;
+              font-weight: 200;
+              font-size: 15px;
+              color: #000;
+
+          }
+          .angle{
+            margin-left: 5px;
+            margin-top: 1px;
+            font-weight: 200;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.71);;
+          }
+        }
+        &--hover{
+          width: 311px;
+          height: 208px;
+          background: #FFFFFF;
+          .items{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #DAD8DE;
+            div{
+              padding: 10px 0 10px 10px;
+              font-family: 'Open Sans',sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #000000;
+              width: 301px;
+              display: flex;
+              justify-content: space-between;
+              .icon{
+                color: #DAD8DE;
+                margin-right: 10px;
+              }
+              &:hover{
+                color: #FFFFFF;
+                width: 301px;
+                background: linear-gradient(0deg, #7F00AC, #7F00AC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                .icon{
+                  margin-right: 5px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .course{
+        cursor: pointer;
+        &--title{
+          width: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .p{
+            color: rgba(255, 255, 255, 0.71);
+
+            &:hover{
+              text-decoration: underline;
+
+            }
+          }
+          .lAngle{
+            margin-left: 5px;
+            margin-top: 1px;
+            font-weight: 200;
+            font-size: 15px;
+            color: #000;
+
+          }
+          .angle{
+            margin-left: 5px;
+            margin-top: 1px;
+            font-weight: 200;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.71);;
+          }
+        }
+        &--hover{
+          width: 311px;
+          height: 85px;
+          background: #FFFFFF;
+          .items{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #DAD8DE;
+            div{
+              padding: 10px 0 10px 10px;
+              font-family: 'Open Sans',sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 21px;
+              color: #000000;
+              width: 301px;
+              display: flex;
+              justify-content: space-between;
+              .icon{
+                color: #DAD8DE;
+                margin-right: 10px;
+              }
+              &:hover{
+                color: #FFFFFF;
+                width: 301px;
+                background: linear-gradient(0deg, #7F00AC, #7F00AC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                .icon{
+                  margin-right: 5px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .hover{
+        display: none;
       }
 }
-
     .active{
       color: #FA01FF;
     }
@@ -43,9 +196,23 @@
       align-items: center;
       justify-content: space-between;
       width: 300px;
+      .dark{
+        color: #FFFFFF;
+        font-size: 25px;
+        height: 46px;
+        cursor: pointer;
+      }
+      .light{
+        color: rgba(0, 0, 0, 0.86);
+        font-weight: 900;
+        font-size: 21px;
+        height: 46px;
+        cursor: pointer;
+      }
       .icon{
         color: #FFFFFF;
         font-size: 22px;
+        margin-left: 10px;
       }
       .sign-up{
         font-style: normal;
@@ -53,12 +220,31 @@
         font-size: 18px;
         line-height: 25px;
         color: #DAD8DE;
-        width: 109px;
-        height: 46px;
-        background: linear-gradient(180deg, #FA01FF 0%, rgba(134, 18, 129, 0.91) 99.22%, #000000 150%);
+        width: 100px;
+        height: 42px;
+        background: linear-gradient(180deg, rgba(233,26,238,0.91) -10.3%, #820fa9 70.13%);
         border-radius: 2px;
         border: none;
         outline: none;
+        &:hover{
+          background: linear-gradient(360deg, #961ff3 0%, rgba(250, 0, 255, 0.56) 99.86%, rgba(188, 0, 255, 0.89) 200%);
+        }
+      }
+      .darkUp{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: whitesmoke;
+        width: 100px;
+        height: 42px;
+        background: linear-gradient(180deg, rgba(225,3,231,0.91) -10.3%, #47035e 70.13%);
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        &:hover{
+          background: linear-gradient(360deg, #47037c 0%, rgba(94, 1, 96, 0.56) 99.86%, rgba(121, 4, 164, 0.89) 200%);
+        }
       }
       .sign-in{
         font-style: normal;
@@ -73,13 +259,42 @@
         border: none;
         outline: none;
         &:hover{
-          text-decoration:1px solid red;
+          text-decoration: underline;
+        }
+      }
+      .darkBtn{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(10, 10, 10, 0.85);
+        background: transparent;
+        width: 109px;
+        height: 46px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        &:hover{
+          color: #7909ef;
         }
       }
 
 
     }
+    .darkColor{
+      color: black;
+      font-weight: 600;
+      &:hover{
+        color: black;
+      }
+    }
+
   }
+  li{
+    list-style: none;
+  }
+
+
 }
 @media (max-width: 1440px) {
 
@@ -91,7 +306,104 @@
 
 }
 @media (max-width: 1024px) {
+  #header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .header{
+      width: 100%;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 45%;
+        h1{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 33px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+          &:hover {
+            color: #944FFF;
+          }
+        }
+        .To{
+          color: #FA01FF;
+          &:hover {
+            color: #FFFFFF;
 
+          }
+        }
+        .Learn{
+          color:#944FFF;
+          &:hover {
+            color: #FFFFFF;
+
+          }
+        }
+        .a{
+          color: #FFFFFF;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+      }
+
+      .active{
+        color: #FA01FF;
+      }
+      &--btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        .icon{
+          color: #FFFFFF;
+          font-size: 22px;
+        }
+        .sign-up{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          color: #DAD8DE;
+          width: 109px;
+          height: 46px;
+          background: linear-gradient(180deg, #FA01FF 0%, rgba(134, 18, 129, 0.91) 99.22%, #000000 150%);
+          border-radius: 2px;
+          border: none;
+          outline: none;
+        }
+        .sign-in{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          color: #DAD8DE;
+          background: transparent;
+          width: 109px;
+          height: 46px;
+          border-radius: 2px;
+          border: none;
+          outline: none;
+          &:hover{
+            text-decoration:1px solid red;
+          }
+        }
+
+
+      }
+    }
+  }
 }
 @media (max-width: 992px) {
 

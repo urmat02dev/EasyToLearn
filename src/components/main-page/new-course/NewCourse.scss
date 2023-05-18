@@ -1,0 +1,49 @@
+#new-course{
+  .new-course{
+    .darkColor{
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    .title{
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+      color: #DAD8DE;
+      margin-bottom: 20px;
+    }
+    &--btn{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+
+      button{
+        width: 396px;
+        height: 55px;
+        background: linear-gradient(270deg, rgba(248, 1, 253, 0.359375) -10.3%, #BC00FF 70.13%);
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        color: #FFFFFF;
+        outline: none;
+        border: none;
+        text-transform: uppercase;
+        &:hover{
+          background: linear-gradient(360deg, #961ff3 0%, rgba(250, 0, 255, 0.56) 99.86%, rgba(188, 0, 255, 0.89) 200%);
+        }
+
+      }
+    }
+  }
+
+}

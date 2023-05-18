@@ -1,4 +1,184 @@
+#footer{
+  background: rgba(57, 46, 92, 1);
+  width: 100%;
+  .footer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 40px 0 80px 0;
+    .light{
+      color: #FFFFFF;
+    }
+    &--item{
+      .title{
+        width: 115.81px;
+        height: 22px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+        &:hover {
+          color: #944FFF;
+        }
+      }
+      .lightTitle{
+        width: 115.81px;
+        height: 22px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
 
+      }
+      .To{
+        color: #FA01FF;
+        &:hover {
+          color: #FFFFFF;
+
+        }
+      }
+      .Learn{
+        color:#944FFF;
+        &:hover {
+          color: #FFFFFF;
+
+        }
+      }
+      .p{
+        width: 228.01px;
+        height: 22px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: rgba(218, 216, 222, 1)
+      }
+      .lightP{
+        width: 228.01px;
+        height: 22px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: white;
+      }
+    }
+    &--items{
+      h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        color: #DAD8DE;
+        padding-bottom: 15px;
+      }
+      .lightH1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+      }
+      p{
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #DAD8DE;
+        padding: 3px 0;
+        &:hover{
+        text-decoration: underline;
+      }
+      }
+      .light{
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: white;
+        padding: 3px 0;
+      }
+    }
+    &--itemz{
+      display: flex;
+      flex-direction: column;
+      h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 19px;
+        color: #DAD8DE;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .lightH1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+      }
+      a{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #DAD8DE;
+        padding: 2px 0;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .lightA{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding: 2px 0;
+      }
+      &--social{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        .icon{
+          cursor: pointer;
+          padding: 0 5px;
+          color: rgba(218, 216, 222, 1);
+          font-size: 25px;
+        }
+
+        .icons{
+          cursor: pointer;
+          padding: 0 5px;
+          color: rgba(218, 216, 222, 1);
+          font-size: 30px;
+        }
+        .lightI{
+          cursor: pointer;
+          padding: 0 5px;
+          color: white;
+          font-size: 25px;
+        }
+        .light{
+          cursor: pointer;
+          padding: 0 5px;
+          color: white;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1440px) {
 
 }
