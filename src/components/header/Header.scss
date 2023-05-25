@@ -15,7 +15,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 45%;
+      width: 55%;
     .h1{
     font-style: normal;
     font-weight: 700;
@@ -62,7 +62,7 @@
 
             &:hover{
               text-decoration: underline;
-
+              color: #FFFFFF;
             }
           }
           .lAngle{
@@ -83,12 +83,116 @@
         }
         &--hover{
           width: 311px;
-          height: 208px;
+          height: 125px;
           background: #FFFFFF;
+          position:absolute;
+          left:260px;
+          top:55px;
           .items{
             display: flex;
             flex-direction: column;
             border: 1px solid #DAD8DE;
+            .front{
+              width: 311px;
+              height: 290px;
+              background: #FFFFFF;
+              position:absolute;
+              left: 311px;
+              top:0;
+              display: flex;
+              flex-direction: column;
+              div{
+                padding: 10px 0 10px 10px;
+                font-family: 'Open Sans',sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+                width: 301px;
+                display: flex;
+                justify-content: space-between;
+                .icon{
+                  color: #DAD8DE;
+                  margin-right: 10px;
+                }
+                &:hover{
+                  color: #FFFFFF;
+                  width: 301px;
+                  background: linear-gradient(0deg, #7F00AC, #7F00AC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                  .icon{
+                    margin-right: 5px;
+                    color: white;
+                  }
+                }
+              }
+            }
+            .back{
+              width: 311px;
+              height: 208px;
+              background: #FFFFFF;
+              position:absolute;
+              left: 311px;
+              top:42px;
+              div{
+                padding: 10px 0 10px 10px;
+                font-family: 'Open Sans',sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+                width: 301px;
+                display: flex;
+                justify-content: space-between;
+                .icon{
+                  color: #DAD8DE;
+                  margin-right: 10px;
+                }
+                &:hover{
+                  color: #FFFFFF;
+                  width: 301px;
+                  background: linear-gradient(0deg, #7F00AC, #7F00AC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                  .icon{
+                    margin-right: 5px;
+                    color: white;
+                  }
+                }
+              }
+            }
+            .design{
+              width: 311px;
+              height: 165px;
+              background: #FFFFFF;
+              position:absolute;
+              left: 311px;
+              top:82px;
+              div{
+                padding: 10px 0 10px 10px;
+                font-family: 'Open Sans',sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+                width: 301px;
+                display: flex;
+                justify-content: space-between;
+                .icon{
+                  color: #DAD8DE;
+                  margin-right: 10px;
+                }
+                &:hover{
+                  color: #FFFFFF;
+                  width: 301px;
+                  background: linear-gradient(0deg, #7F00AC, #7F00AC), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+                  .icon{
+                    margin-right: 5px;
+                    color: white;
+                  }
+                }
+              }
+            }
             div{
               padding: 10px 0 10px 10px;
               font-family: 'Open Sans',sans-serif;
@@ -115,6 +219,7 @@
               }
             }
           }
+
         }
       }
       .course{
@@ -129,7 +234,7 @@
 
             &:hover{
               text-decoration: underline;
-
+              color: #FFFFFF;
             }
           }
           .lAngle{
@@ -152,6 +257,9 @@
           width: 311px;
           height: 85px;
           background: #FFFFFF;
+          position: absolute;
+          left: 400px;
+          top:55px;
           .items{
             display: flex;
             flex-direction: column;
@@ -182,6 +290,8 @@
               }
             }
           }
+
+
         }
       }
       .hover{

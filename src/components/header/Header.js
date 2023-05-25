@@ -12,7 +12,9 @@ const Header = () => {
   const dispatch = useDispatch()
   const {dark,hoverCourse} = useSelector(state => state)
   const {hover} = useSelector(state => state)
-
+  const [front, setFront] = useState(false)
+  const [back, setBack] = useState(false)
+  const [design, setDesign] = useState(false)
 
   const getSignUp = () => {
     nav("/sign-up")
@@ -28,15 +30,35 @@ const Header = () => {
   }
   const getHover = () => {
     dispatch({type:HOVER,payload:true})
+
   }
   const getHoverCourse = () => {
     dispatch({type:HOVER_COURSE,payload:true})
   }
   const getCloseHover = () => {
     dispatch({type:HOVER,payload:false})
+    setFront(false)
   }
   const getCloseHoverCourse = () => {
     dispatch({type:HOVER_COURSE,payload:false})
+  }
+  const getNav = () => {
+    nav("/category")
+  }
+  const getFront = () => {
+    setFront(true)
+    setBack(false)
+    setDesign(false)
+  }
+  const getBack = () => {
+    setFront(false)
+    setBack(true)
+    setDesign(false)
+  }
+  const getDesign = () => {
+    setFront(false)
+    setBack(false)
+    setDesign(true)
   }
   console.log(dark)
   console.log(hover)
@@ -47,8 +69,10 @@ const Header = () => {
     }}
          >
       <div className="container">
+
         <div className={"header"} >
           <div className={"header--title"} >
+            <h1>{front}</h1>
             <NavLink to={"/"} onMouseOver={() => getCloseHover() || getCloseHoverCourse()}>
               <h1 className={!dark ? "h1 darkColor": "h1"}>Easy
               <span className={!dark ? "To darkColor" : "To"}>To</span>
@@ -57,28 +81,47 @@ const Header = () => {
             </NavLink>
             <div className={"category"}>
               <div className={"category--title"}>
-                <p className={!dark ? "lP" : "p"} onMouseOver={() => getHover()}
+                <p className={!dark ? "lP" : "p"} onMouseOver={() => getHover() || setFront(false)}
+                   onClick={getNav}
                 >Категории</p>
                 <TfiAngleDown className={!dark ? "lAngle" : "angle"}/>
               </div>
               {
                 hover  &&
-                  <div className={"category--hover"}
-                               style={{
-                                 position:!hover ? 'absolute' : 'absolute',
-                                 left: !hover ? '-100%' : '240px',
-                                 top: !hover ? '-100%' : '55px'
-
-
-                               }}
-                  >
+                  <div className={"category--hover"}>
                   <div className={"items"}>
-                    <div>Frontend <FaAngleRight className={"icon"}/></div>
-                    <div>Backend <FaAngleRight className={"icon"}/></div>
-                    <div>Design <FaAngleRight className={"icon"}/></div>
-                    <div>Книги <FaAngleRight className={"icon"}/></div>
-                    <div>Graphic <FaAngleRight className={"icon"}/></div>
+                    <div onMouseOver={() => getFront()}>Frontend <FaAngleRight className={"icon"} /></div>
+                    <div  onMouseOver={() => getBack()}>Backend <FaAngleRight className={"icon"}/></div>
+                    <div onMouseOver={() => getDesign()}>Design <FaAngleRight className={"icon"}/></div>
+                    {
+                        front && <div className={"front"} >
+                          <div>HTML <FaAngleRight className={"icon"}/></div>
+                          <div>CSS <FaAngleRight className={"icon"}/></div>
+                          <div>JavaScript<FaAngleRight className={"icon"}/></div>
+                          <div>TypeScript <FaAngleRight className={"icon"}/></div>
+                          <div>React JS <FaAngleRight className={"icon"}/></div>
+                          <div>Vue <FaAngleRight className={"icon"}/></div>
+                          <div>Angular <FaAngleRight className={"icon"} onMouseOver={() => setFront(true)}/></div>
+                        </div>
+                    }
+                    {
+                        back && <div className={"back"} >
+                          <div>Python <FaAngleRight className={"icon"} onMouseOver={() => setFront(true)}/></div>
+                          <div>Java <FaAngleRight className={"icon"}/></div>
+                          <div>MongoDB <FaAngleRight className={"icon"}/></div>
+                          <div>SQL<FaAngleRight className={"icon"}/></div>
+                        </div>
+                    }
+                    {
+                        design && <div className={"design"} >
+                          <div>Figma <FaAngleRight className={"icon"} onMouseOver={() => setFront(true)}/></div>
+                          <div>Illustrator <FaAngleRight className={"icon"}/></div>
+                          <div>Photoshop<FaAngleRight className={"icon"}/></div>
+                          <div>Adobe XD<FaAngleRight className={"icon"}/></div>
+                        </div>
+                    }
                   </div>
+
                 </div>
               }
             </div>
@@ -90,18 +133,11 @@ const Header = () => {
               </div>
               {
                   hoverCourse  &&
-                  <div className={"course--hover"}
-                       style={{
-                         position:!hoverCourse ? 'absolute' : 'absolute',
-                         zIndex:!hoverCourse ? "-1" : "1",
-                         left: !hoverCourse ? '-100%' : '365px',
-                         top: !hoverCourse ? '-100%' : '55px'
-
-
-                       }}>
+                  <div className={"course--hover"}>
                     <div className={"items"}>
                       <div>Frontend <FaAngleRight className={"icon"}/></div>
                       <div>Backend <FaAngleRight className={"icon"}/></div>
+
                     </div>
                   </div>
               }
@@ -115,6 +151,8 @@ const Header = () => {
               О нас</NavLink>
             <a href={"#reviews"} className={!dark ? "a darkColor":"a"} onMouseOver={() => getCloseHover() || getCloseHoverCourse()}
             >Отзывы</a>
+            <a href={"#reviews"} className={!dark ? "a darkColor":"a"} onMouseOver={() => getCloseHover() || getCloseHoverCourse()}
+            >Книги</a>
           </div>
           <div className="header--btn" onMouseOver={() => getCloseHover() || getCloseHoverCourse()}>
             {
