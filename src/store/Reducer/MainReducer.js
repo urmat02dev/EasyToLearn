@@ -1,10 +1,11 @@
-import {DARK, HOVER, HOVER_COURSE} from "./ActionTypes";
+import {DARK, HOVER, HOVER_COURSE, SIGN_UP} from "./ActionTypes";
 import {hover} from "@testing-library/user-event/dist/hover";
 
 const initialState = {
     dark: true,
     hover: false,
     hoverCourse: false,
+    signUp:{}
 }
 
 export const MainReducer = (state = initialState, action) => {
@@ -24,6 +25,9 @@ export const MainReducer = (state = initialState, action) => {
                 dark: state.dark,
                 hover: false,
                 hoverCourse: action.payload
+        }
+        case SIGN_UP:{
+            return {...state, signUp: action.payload}
         }
 
 

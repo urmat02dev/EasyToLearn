@@ -52,13 +52,13 @@
     &--blocks{
       display: flex;
       justify-content: space-between;
-      margin-bottom: 350px;
+      margin-bottom: 450px;
       &--block--one{
         position: absolute;
         width: 301px;
-        height: 305px;
+        height: 450px;
         left: 85px;
-        top: 640px;
+        top: 630px;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -144,9 +144,9 @@
       &--block--two{
         position: absolute;
         width: 301px;
-        height: 305px;
+        height: 450px;
         left: 526px;
-        top: 640px;
+        top: 630px;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -232,9 +232,9 @@
       &--block--three{
         position: absolute;
         width: 301px;
-        height: 305px;
-        left: 967px;
-        top: 640px;
+        height: 450px;
+        left: 72%;
+        top: 630px;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
